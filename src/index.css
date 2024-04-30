@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 200px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.category-btn:hover {
+  background-color: #0388fc;
+  color: white;
+  transform: scale(1.5);
+  border-radius: 30%;
+}
+.category-btn:hover span{
+  color: white;
+}
+.react-player {
+  height: 77vh;
+  width: 100%;
+}
+.search-bar{
+  border:none;
+  outline:none;
+  width:550px;
+}
+
+.category-btn{
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor:pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 47px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto;
+  }
+  .react-player {
+    height: 45vh;
+  }
+  .search-bar{
+    width:200px;
+  }
+}
