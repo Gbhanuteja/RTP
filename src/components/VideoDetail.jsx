@@ -6,6 +6,8 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Videos, Loader } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
+import {Sidebar} from "./";
+
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
@@ -27,7 +29,8 @@ const VideoDetail = () => {
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+
+          <Box sx={{ width: "100%", position: "relative", top: "100px", left:"300px" }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
               {title}
@@ -41,12 +44,12 @@ const VideoDetail = () => {
               </Link>
             </Stack>
             <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff", marginTop: 1, marginBottom: 1, px: 2 }}>
-              <Typography variant="body1" sx={{ opacity: 0.7, fontSize: "14px" }}>
+              {/* <Typography variant="body1" sx={{ opacity: 0.7, fontSize: "14px" }}>
                 {parseInt(viewCount).toLocaleString()} views
               </Typography>
               <Typography variant="body1" sx={{ opacity: 0.7, fontSize: "14px" }}>
                 {parseInt(likeCount).toLocaleString()} likes
-              </Typography>
+              </Typography> */}
             </Stack>
           </Box>
         </Box>
