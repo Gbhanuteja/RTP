@@ -6,10 +6,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { Videos, Loader } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
-import {Sidebar} from "./";
-
 const VideoDetail = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Coding");
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
   const { id } = useParams();
