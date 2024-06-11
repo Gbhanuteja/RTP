@@ -24,7 +24,7 @@ const VideoDetail = () => {
 
   if (!videoDetail?.snippet) return <Loader />;
 
-  const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetail;
+  const { snippet: { title, channelId, channelTitle } } = videoDetail;
 
   return (
     <Box minHeight="95vh">
@@ -43,14 +43,6 @@ const VideoDetail = () => {
                   <CheckCircleIcon sx={{ fontSize: "12px", color: "gray", ml: "5px" }} />
                 </Typography>
               </Link>
-            </Stack>
-            <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff", marginTop: 1, marginBottom: 1, px: 2 }}>
-              {/* <Typography variant="body1" sx={{ opacity: 0.7, fontSize: "14px" }}>
-                {parseInt(viewCount).toLocaleString()} views
-              </Typography>
-              <Typography variant="body1" sx={{ opacity: 0.7, fontSize: "14px" }}>
-                {parseInt(likeCount).toLocaleString()} likes
-              </Typography> */}
             </Stack>
           </Box>
         </Box>
