@@ -29,9 +29,7 @@ const VideoDetail = () => {
   return (
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
-      <Box sx={{ height: { sx: "auto", md: "92vh" }, borderRight: "1px solid #3d3d3d", px: { sx: 1, md: 2 } }}>
-        <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-      </Box>
+     
         <Box flex={1}>
           <Box sx={{ width: "100%", position: "relative", top: "100px", left:"100px" }}>
             <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
